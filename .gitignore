@@ -28,3 +28,7 @@ dist-ssr
 uploads/
 /brain/
 .gemini/
+*-player-script.js
+*.js.map
+*.env*
+! .env.example

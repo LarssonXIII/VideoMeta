@@ -1,31 +1,31 @@
 .results-container {
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 100%;
 }
 
 .results-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .tabs {
     display: flex;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid var(--surface-border);
-    padding-bottom: 1px;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
 }
 
 .tab-btn {
     background: transparent;
     border: none;
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 1.5rem;
     color: var(--text-secondary);
     font-family: inherit;
-    font-size: 1.125rem;
-    font-weight: 500;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 700;
     cursor: pointer;
     position: relative;
     transition: var(--transition);
@@ -36,7 +36,7 @@
 }
 
 .tab-btn.active {
-    color: var(--text-primary);
+    color: var(--primary);
 }
 
 .tab-btn.active::after {
@@ -45,36 +45,35 @@
     bottom: -1px;
     left: 0;
     right: 0;
-    height: 2px;
+    height: 3px;
     background: var(--primary);
-    border-radius: 2px 2px 0 0;
-}
-
-.relative {
-    position: relative;
 }
 
 .result-textarea {
     width: 100%;
-    height: 250px;
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid var(--surface-border);
-    border-radius: var(--radius-sm);
-    padding: 1.5rem;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
     color: var(--text-primary);
     font-family: inherit;
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.7;
     resize: vertical;
     outline: none;
+    transition: var(--transition);
 }
 
 .result-textarea:focus {
     border-color: var(--primary);
+    background: rgba(255, 255, 255, 0.02);
 }
 
-.copy-btn {
-    position: absolute;
-    bottom: 24px;
-    right: 24px;
+.tags-section h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
 }
