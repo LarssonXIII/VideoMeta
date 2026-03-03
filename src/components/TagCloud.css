@@ -1,0 +1,48 @@
+.tag-cloud-wrapper {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius-sm);
+    padding: 1.5rem;
+}
+
+.tag-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.tag-chip {
+    display: inline-flex;
+    align-items: center;
+    background: var(--surface-hover);
+    border: 1px solid var(--surface-border);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    transition: var(--transition);
+}
+
+.tag-chip:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.tag-remove {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.tag-remove:hover {
+    color: var(--secondary);
+}
